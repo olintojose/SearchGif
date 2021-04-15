@@ -6,6 +6,7 @@ export const AddCategory = ( {setCategories} ) => {
     const [InputValue, setInputValue] = useState('')
     const handleInputChange= (e) => {
         setInputValue(e.target.value)
+        console.log('HandreInputChange llamado')
     }
 
   
@@ -13,6 +14,7 @@ export const AddCategory = ( {setCategories} ) => {
   
     const handleSubmit = (e) => {   
         e.preventDefault();
+        console.log('handleSubmit');
         //console.log('submit hecho')
        // setCategories( [...categories,'HunterXHunter'] )  No tengo acceso a categories
        if ( InputValue.trim().length > 2) {
